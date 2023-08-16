@@ -10,7 +10,7 @@ const Product = () => {
   
   useEffect(() => {
     axios.get(`https://tss-backend-aqx2.onrender.com/api/product/${id}`).then((res) => {
-      // console.log(res.data.product[0])
+      console.log(res.data.product[0])
       setProduct(res.data.product[0])
     }).catch((err) => {
       console.log(err)
