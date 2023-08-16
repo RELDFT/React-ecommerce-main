@@ -7,6 +7,7 @@ const Product = () => {
   const { id } = useParams();
   const [product, setProduct] = useState([]);
   const [error, setError] = useState(false);
+  
   useEffect(() => {
     axios.get(`https://tss-backend-aqx2.onrender.com/api/product/${id}`).then((res) => {
       // console.log(res.data.product[0])
